@@ -49,6 +49,11 @@
             bindings = <&kp DEL>;
             key-positions = <8 9>;
         };
+
+        F2_combo {
+            bindings = <&kp F2>;
+            key-positions = <12 2>;
+        };
     };
 
     macros {
@@ -74,6 +79,8 @@
             label = "Q1";
             #binding-cells = <0>;
             bindings = <&kp Q>, <&kp NUMBER_1>;
+
+            tapping-term-ms = <150>;
         };
 
         w2: w2 {
@@ -81,6 +88,8 @@
             label = "W2";
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp NUMBER_2>;
+
+            tapping-term-ms = <150>;
         };
 
         e3: e3 {
@@ -88,6 +97,8 @@
             label = "E3";
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp NUMBER_3>;
+
+            tapping-term-ms = <150>;
         };
 
         r4: r4 {
@@ -95,6 +106,8 @@
             label = "R4";
             #binding-cells = <0>;
             bindings = <&kp R>, <&kp NUMBER_4>;
+
+            tapping-term-ms = <150>;
         };
 
         t5: t5 {
@@ -102,6 +115,8 @@
             label = "T5";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp N5>;
+
+            tapping-term-ms = <150>;
         };
 
         y6: y6 {
@@ -109,6 +124,8 @@
             label = "Y6";
             #binding-cells = <0>;
             bindings = <&kp Y>, <&kp NUMBER_6>;
+
+            tapping-term-ms = <150>;
         };
 
         u7: u7 {
@@ -116,6 +133,8 @@
             label = "U7";
             #binding-cells = <0>;
             bindings = <&kp U>, <&kp N7>;
+
+            tapping-term-ms = <150>;
         };
 
         i8: i8 {
@@ -123,6 +142,8 @@
             label = "I8";
             #binding-cells = <0>;
             bindings = <&kp I>, <&kp N8>;
+
+            tapping-term-ms = <150>;
         };
 
         o9: o9 {
@@ -130,6 +151,8 @@
             label = "O9";
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp N9>;
+
+            tapping-term-ms = <150>;
         };
 
         p0: p0 {
@@ -137,6 +160,8 @@
             label = "P0";
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp N0>;
+
+            tapping-term-ms = <150>;
         };
     };
 
