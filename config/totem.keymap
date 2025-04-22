@@ -54,6 +54,11 @@
             bindings = <&kp F2>;
             key-positions = <12 2>;
         };
+
+        combo_apos {
+            bindings = <&kp APOS>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {
@@ -80,7 +85,7 @@
             #binding-cells = <0>;
             bindings = <&kp Q>, <&kp NUMBER_1>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         w2: w2 {
@@ -89,7 +94,7 @@
             #binding-cells = <0>;
             bindings = <&kp W>, <&kp NUMBER_2>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         e3: e3 {
@@ -98,7 +103,7 @@
             #binding-cells = <0>;
             bindings = <&kp E>, <&kp NUMBER_3>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
         };
 
         r4: r4 {
@@ -152,7 +157,7 @@
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp N9>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
 
         p0: p0 {
@@ -161,7 +166,7 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp N0>;
 
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
         };
     };
 
