@@ -44,6 +44,36 @@
             key-positions = <11 12 13>;
             bindings = <&tog TVP1>;
         };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <8 9>;
+        };
+
+        F2_combo {
+            bindings = <&kp F2>;
+            key-positions = <12 2>;
+        };
+
+        combo_apos {
+            bindings = <&kp APOS>;
+            key-positions = <7 8>;
+        };
+
+        combo_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <22 23>;
+        };
+
+        combo_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <23 24>;
+        };
+
+        combo_and {
+            bindings = <&kp AMPS>;
+            key-positions = <6 16>;
+        };
     };
 
     macros {
@@ -60,6 +90,98 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
+        };
+    };
+
+    behaviors {
+        Q1: Q1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Q1";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp NUMBER_1>;
+
+            tapping-term-ms = <200>;
+        };
+
+        w2: w2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "W2";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp NUMBER_2>;
+
+            tapping-term-ms = <200>;
+        };
+
+        e3: e3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E3";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp NUMBER_3>;
+
+            tapping-term-ms = <175>;
+        };
+
+        r4: r4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R4";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp NUMBER_4>;
+
+            tapping-term-ms = <150>;
+        };
+
+        t5: t5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T5";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp N5>;
+
+            tapping-term-ms = <150>;
+        };
+
+        y6: y6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Y6";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp NUMBER_6>;
+
+            tapping-term-ms = <150>;
+        };
+
+        u7: u7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "U7";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp N7>;
+
+            tapping-term-ms = <150>;
+        };
+
+        i8: i8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "I8";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp N8>;
+
+            tapping-term-ms = <150>;
+        };
+
+        o9: o9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "O9";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp N9>;
+
+            tapping-term-ms = <200>;
+        };
+
+        p0: p0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "P0";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp N0>;
+
+            tapping-term-ms = <200>;
         };
     };
 
@@ -85,10 +207,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q       &kp W       &kp E        &kp R          &kp T      &kp Y    &kp U          &kp I        &kp O       &kp P
-       &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&kp Q  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp BSLH
-                               &kp DEL      &lt NAV SPACE  &kp TAB    &kp RET  &lt SYM SPACE  &kp BSPC
+               &Q1         &w2         &e3          &r4            &t5        &y6      &u7            &i8          &o9         &p0
+               &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
+&kp BACKSLASH  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp MINUS
+                                       &kp DEL      &lt NAV SPACE  &kp TAB    &kp RET  &lt SYM SPACE  &kp BSPC
             >;
         };
 
@@ -111,10 +233,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &kp KP_SLASH
-                               &trans    &trans     &trans      &mo ADJ   &kp KP_N0  &trans
+        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8             &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5             &kp KP_N6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2             &kp KP_N3  &kp KP_MULTIPLY  &kp KP_SLASH
+                               &trans    &trans     &trans      &mo ADJ   &kp KP_N0  &mt BACKSPACE PERIOD
             >;
         };
 
@@ -189,10 +311,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
+       &kp TAB     &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none             &none  &none              &none
+       &lt TVP2 L  &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &kp LC(LG(LEFT))  &none  &kp LC(LG(RIGHT))  &none
+&kp J  &kp LSHFT   &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none             &none  &none              &none  &none
+                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none             &none
             >;
         };
 
