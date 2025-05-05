@@ -25,7 +25,7 @@
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
-    flavor = "tap-preferred";
+    flavor = "balanced";
     tapping-term-ms = <200>;
 };
 
@@ -74,6 +74,11 @@
             bindings = <&kp AMPS>;
             key-positions = <6 16>;
         };
+
+        combo_F4 {
+            bindings = <&kp F4>;
+            key-positions = <3 13>;
+        };
     };
 
     macros {
@@ -90,6 +95,27 @@
                 <&kp LSHFT>,
                 <&macro_tap>,
                 <&kp G &kp I &kp F>;
+        };
+
+        insert_para: inset_para {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            label = "INSET_PARA";
+        };
+
+        insert_bracket: insert_sqbrace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "INSERT_SQBRACE";
+        };
+
+        insert_brace: insert_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "INSERT_BRACE";
         };
     };
 
@@ -207,10 +233,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-               &Q1         &w2         &e3          &r4            &t5        &y6      &u7            &i8          &o9         &p0
-               &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&kp BACKSLASH  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp MINUS
-                                       &kp DEL      &lt NAV SPACE  &kp TAB    &kp RET  &lt SYM SPACE  &kp BSPC
+            &Q1         &w2         &e3          &r4            &t5        &y6      &u7            &i8          &o9         &p0
+            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
+&caps_word  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp MINUS
+                                    &kp DEL      &lt NAV SPACE  &kp TAB    &kp RET  &lt SYM SPACE  &kp BSPC
             >;
         };
 
@@ -233,10 +259,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8             &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5             &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2             &kp KP_N3  &kp KP_MULTIPLY  &kp KP_SLASH
-                               &trans    &trans     &trans      &mo ADJ   &kp KP_N0  &mt BACKSPACE PERIOD
+        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &insert_brace      &kp TILDE   &kp KP_N7  &kp KP_N8             &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &insert_bracket    &kp APOS    &kp KP_N4  &kp KP_N5             &kp KP_N6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &insert_para       &kp PERIOD  &kp KP_N1  &kp KP_N2             &kp KP_N3  &kp KP_MULTIPLY  &kp KP_SLASH
+                               &trans    &trans     &trans             &mo ADJ     &kp KP_N0  &mt PERIOD BACKSPACE
             >;
         };
 
