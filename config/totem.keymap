@@ -79,6 +79,16 @@
             bindings = <&kp F4>;
             key-positions = <3 13>;
         };
+
+        combo_underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <26 27>;
+        };
+
+        combo_dash {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <15 16>;
+        };
     };
 
     macros {
@@ -233,9 +243,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &Q1         &w2         &e3          &r4            &t5        &y6      &u7            &i8          &o9         &p0
+            &kp Q       &kp W       &kp E        &kp R          &kp T      &kp Y    &kp U          &kp I        &kp O       &kp P
             &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&caps_word  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp MINUS
+&caps_word  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp DOUBLE_QUOTES
                                     &kp DEL      &lt NAV SPACE  &kp TAB    &kp RET  &lt SYM SPACE  &kp BSPC
             >;
         };
@@ -285,10 +295,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &gif      &mo ADJ      &trans        &kp C_PP        &trans
+        &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp STAR          &kp RA(U)      &kp LS(O)   &kp DQT
+        &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp C_PLAY_PAUSE  &kp LC(LS(G))  &kp RA(N4)  &kp RA(O)
+&trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP      &kp C_PREV     &kp C_NEXT  &kp BSLH   &trans
+                                  &trans     &gif      &mo ADJ      &trans        &kp C_PP          &trans
             >;
         };
 
