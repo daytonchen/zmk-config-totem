@@ -1,16 +1,16 @@
 layout: {zmk_keyboard: totem}
 layers:
   BASE:
-  - '&Q1'
-  - '&w2'
-  - '&e3'
-  - '&r4'
-  - '&t5'
-  - '&y6'
-  - '&u7'
-  - '&i8'
-  - '&o9'
-  - '&p0'
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
@@ -32,7 +32,7 @@ layers:
   - ','
   - .
   - /
-  - '-'
+  - '"'
   - DEL
   - {t: SPACE, h: NAVI}
   - TAB
@@ -85,9 +85,9 @@ layers:
   - $
   - '%'
   - ^
-  - '&'
+  - '*'
   - AltGr+U
-  - ''''
+  - Sft+O
   - '"'
   - AltGr+A
   - {t: ▽, type: trans}
@@ -95,8 +95,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MUTE
-  - Sft+AltGr+4
-  - AltGr+5
+  - PLAY PAUSE
+  - Ctl+Sft+G
   - AltGr+4
   - AltGr+O
   - {t: ▽, type: trans}
@@ -253,3 +253,7 @@ combos:
   k: '&'
 - p: [3, 13]
   k: F4
+- p: [26, 27]
+  k: _
+- p: [15, 16]
+  k: KP MINUS
