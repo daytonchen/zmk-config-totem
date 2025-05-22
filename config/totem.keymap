@@ -29,6 +29,8 @@
     tapping-term-ms = <200>;
 };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS SLASH>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -82,12 +84,12 @@
 
         combo_underscore {
             bindings = <&kp UNDER>;
-            key-positions = <26 27>;
+            key-positions = <27 28>;
         };
 
         combo_dash {
             bindings = <&kp KP_MINUS>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
     };
 
