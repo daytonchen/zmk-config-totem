@@ -60,10 +60,10 @@ layers:
   - KP 5
   - KP 6
   - KP MINUS
-  - {t: ▽, type: trans}
+  - CAPSLOCK
   - DEL
   - PG UP
-  - CAPS
+  - Sft+V
   - PG DN
   - '&insert_para'
   - .
@@ -100,10 +100,10 @@ layers:
   - AltGr+4
   - AltGr+O
   - {t: ▽, type: trans}
-  - AltGr+F18
-  - AltGr+F19
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+Ctl+Z
+  - Alt+Sft+X
+  - Sft+Alt+C
+  - Ctl+Alt+V
   - {t: ▽, type: trans}
   - VOL DN
   - VOL UP
@@ -168,14 +168,14 @@ layers:
   - ''
   - ''
   - {t: L, h: TVP 2}
-  - LEFT
+  - Gui+Ctl+LEFT
   - LALT
-  - RIGHT
+  - Ctl+Gui+RIGHT
   - SPACE
   - ''
-  - Ctl+Gui+LEFT
+  - Gui+LEFT
   - ''
-  - Ctl+Gui+RIGHT
+  - Gui+RIGHT
   - ''
   - J
   - LSHFT
@@ -257,3 +257,9 @@ combos:
   k: _
 - p: [16, 17]
   k: KP MINUS
+- p: [13, 24]
+  k: '='
+- p: [1, 11]
+  k: '@'
+- p: [0, 10]
+  k: '!'
