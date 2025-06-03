@@ -101,8 +101,8 @@ layers:
   - AltGr+O
   - {t: ▽, type: trans}
   - Alt+Ctl+Z
-  - Alt+Sft+X
-  - Sft+Alt+C
+  - Alt+Ctl+X
+  - Alt+Ctl+C
   - Ctl+Alt+V
   - {t: ▽, type: trans}
   - VOL DN
@@ -263,3 +263,5 @@ combos:
   k: '@'
 - p: [0, 10]
   k: '!'
+- p: [24, 22]
+  k: Ctl+X
