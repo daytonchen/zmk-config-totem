@@ -27,7 +27,7 @@
     global-quick-tap;
     flavor = "balanced";
     tapping-term-ms = <200>;
-    require-prior-idle-ms = <150>;
+    require-prior-idle-ms = <200>;
 };
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS SLASH>; };
@@ -292,10 +292,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &kp ESC    &bt BT_CLR  &kp UP     &kp EQUAL  &insert_brace      &kp TILDE   &kp KP_N7  &kp KP_N8             &kp KP_N9  &kp KP_PLUS
-              &kp LSHFT  &kp LEFT    &kp DOWN   &kp RIGHT  &insert_bracket    &kp APOS    &kp KP_N4  &kp KP_N5             &kp KP_N6  &kp KP_MINUS
-&kp CAPSLOCK  &kp DEL    &kp PG_UP   &kp LS(V)  &kp PG_DN  &insert_para       &kp PERIOD  &kp KP_N1  &kp KP_N2             &kp KP_N3  &kp KP_MULTIPLY  &kp KP_SLASH
-                                     &trans     &trans     &trans             &mo ADJ     &kp KP_N0  &mt PERIOD BACKSPACE
+              &kp ESC           &bt BT_CLR  &kp UP     &kp EQUAL  &insert_brace      &kp TILDE   &kp KP_N7  &kp KP_N8             &kp KP_N9  &kp KP_PLUS
+              &kp LSHFT         &kp LEFT    &kp DOWN   &kp RIGHT  &insert_bracket    &kp APOS    &kp KP_N4  &kp KP_N5             &kp KP_N6  &kp KP_MINUS
+&kp CAPSLOCK  &kp LEFT_CONTROL  &kp PG_UP   &kp LS(V)  &kp PG_DN  &insert_para       &kp PERIOD  &kp KP_N1  &kp KP_N2             &kp KP_N3  &kp KP_MULTIPLY  &kp KP_SLASH
+                                            &trans     &trans     &trans             &mo ADJ     &kp KP_N0  &mt PERIOD BACKSPACE
             >;
         };
 
