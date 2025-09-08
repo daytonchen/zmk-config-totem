@@ -150,6 +150,13 @@
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "INSERT_BRACE";
         };
+
+        excel_merge: excel_merge {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(H) &kp M &kp C>;
+            label = "EXCEL_MERGE";
+        };
     };
 
     behaviors {
@@ -318,9 +325,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PRCNT    &kp CARET     &kp STAR          &kp RA(U)      &kp LS(O)   &kp DQT
-        &kp RA(A)      &trans         &kp RA(S)      &trans         &trans       &kp C_MUTE    &kp C_PLAY_PAUSE  &kp LC(LS(G))  &kp RA(N4)  &kp RA(O)
-&trans  &kp LA(LC(Z))  &kp LA(LC(X))  &kp LA(LC(C))  &kp LC(LA(V))  &trans       &kp C_VOL_DN  &kp C_VOL_UP      &kp C_PREV     &kp C_NEXT  &kp BSLH   &trans
+        &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PRCNT    &kp CARET     &kp STAR          &kp RA(U)      &kp LS(O)     &kp DQT
+        &kp RA(A)      &trans         &kp RA(S)      &trans         &trans       &kp C_MUTE    &kp C_PLAY_PAUSE  &kp LC(LS(G))  &excel_merge  &kp RA(O)
+&trans  &kp LA(LC(Z))  &kp LA(LC(X))  &kp LA(LC(C))  &kp LC(LA(V))  &trans       &kp C_VOL_DN  &kp C_VOL_UP      &kp C_PREV     &kp C_NEXT    &kp BSLH   &trans
                                       &trans         &gif           &mo ADJ      &trans        &kp C_PP          &trans
             >;
         };
@@ -370,9 +377,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp TAB     &kp I             &kp LC(LALT)  &kp O              &kp LC(F20)    &bt BT_SEL 0  &none         &none  &none          &none
-       &lt TVP2 L  &kp LG(LC(LEFT))  &kp LALT      &kp LC(LG(RIGHT))  &kp SPACE      &bt BT_SEL 1  &kp LG(LEFT)  &none  &kp LG(RIGHT)  &none
-&kp J  &kp LSHFT   &kp LC(C)         &kp BSPC      &kp LC(V)          &kp LC(F19)    &bt BT_SEL 2  &none         &none  &none          &none  &none
+       &kp TAB     &kp I             &kp LC(LALT)  &kp O              &kp LC(F20)    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none          &none
+       &lt TVP2 L  &kp LG(LC(LEFT))  &kp LALT      &kp LC(LG(RIGHT))  &kp SPACE      &none         &kp LG(LEFT)  &none         &kp LG(RIGHT)  &none
+&kp J  &kp LSHFT   &kp LG(LS(C))     &kp BSPC      &kp LC(LA(LG(V)))  &kp LC(F19)    &none         &none         &none         &none          &none  &none
                                      &trans        &kp LC(F14)        &kp LC(F13)    &none         &none         &none
             >;
         };
