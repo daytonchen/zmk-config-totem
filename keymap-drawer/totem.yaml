@@ -97,7 +97,7 @@ layers:
   - MUTE
   - PLAY PAUSE
   - Ctl+Sft+G
-  - AltGr+4
+  - '&excel_merge'
   - AltGr+O
   - {t: ▽, type: trans}
   - Alt+Ctl+Z
@@ -163,8 +163,8 @@ layers:
   - O
   - Ctl+F20
   - {t: BT, h: '0'}
-  - ''
-  - ''
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
   - ''
   - ''
   - {t: L, h: TVP 2}
@@ -172,18 +172,18 @@ layers:
   - LALT
   - Ctl+Gui+RIGHT
   - SPACE
-  - {t: BT, h: '1'}
+  - ''
   - Gui+LEFT
   - ''
   - Gui+RIGHT
   - ''
   - J
   - LSHFT
-  - Ctl+C
+  - Gui+Sft+C
   - BSPC
-  - Ctl+V
+  - Ctl+Alt+Gui+V
   - Ctl+F19
-  - {t: BT, h: '2'}
+  - ''
   - ''
   - ''
   - ''
