@@ -13,7 +13,7 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 
 
 ## Details
-Smarter people than me have spent a lot of time thinking about keymaps and layouts, lots of my setup borrows from [Robert U./ urob's wonder writeups](https://github.com/urob/zmk-config)
+Smarter people than me have spent a lot of time thinking about keymaps and layouts, lots of my setup borrows from [Robert U./ urob's wonderful writeups](https://github.com/urob/zmk-config)
 
 Mostly mapped with the help of [nickcousts's 'keymap-editor'](https://github.com/nickcoutsos/keymap-editor) since I love a goood GUI and am afraid of text editors.
 
