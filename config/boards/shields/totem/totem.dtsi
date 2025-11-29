@@ -5,11 +5,16 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "totem_layout.dtsi"  // required for ZMK Studio
+
+&totem_layout {
+    transform = <&default_transform>;
+};
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+//        zmk,matrix_transform = &default_transform; #this was the previous way to do it.
     };
 
     default_transform: keymap_transform_0 {

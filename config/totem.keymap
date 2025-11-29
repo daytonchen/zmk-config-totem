@@ -421,11 +421,25 @@
         };
 
         Mouse {
+            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+
+            label = "Mouse";
+
+            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
+            //             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃   PG_UP   ┃  MOVE_UP  ┃   PG_DN   ┃           ┃
+            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
+            //             ┃           ┃           ┃           ┃           ┃           ┃   ┃ SCRL_LEFT ┃ MOVE_LEFT ┃ MOVE_DOWN ┃MOVE_RIGHT ┃SCRL_RIGHT ┃
+            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
+            // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    LCLK   ┃   MCLK    ┃   RCLK    ┃           ┃           ┃
+            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
+            //                                     ┃           ┃ to def    ┃           ┃   ┃           ┃  SCRL_UP  ┃ SCRL_DOWN ┃
+            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans          &kp PG_UP       &mmv MOVE_UP    &kp PAGE_DOWN    &trans
-        &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans           &trans
-                        &trans  &to 1   &trans    &trans          &msc SCRL_UP    &msc SCRL_DOWN
+        &trans  &trans  &trans  &trans  &trans              &trans          &kp PG_UP       &mmv MOVE_UP    &kp PAGE_DOWN    &trans
+        &trans  &trans  &trans  &trans  &trans              &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans              &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans           &trans
+                        &trans  &to 1   &trans              &trans          &msc SCRL_UP    &msc SCRL_DOWN
             >;
         };
     };
