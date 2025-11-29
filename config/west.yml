@@ -4,11 +4,19 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: bildermankawasaki
+      url-base: https://github.com/bildermankawasaki
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
+
+
+    # trying BildermanKawasaki's totem module
+    - name: zmk-keyboard-totem
+      remote: bildermankawasaki
+      revision: main
     
     # urob modules for zmk, stashing here for now
     - name: zmk-adaptive-key
@@ -30,6 +38,7 @@ manifest:
     - name: zmk-tri-state
       remote: urob
       revision: v0.3
+
       path: modules/zmk/tri-state
   self:
     path: config
