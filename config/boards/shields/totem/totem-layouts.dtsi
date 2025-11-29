@@ -1,6 +1,6 @@
 #include <physical_layouts.dtsi>
 
-# Getting ZMk studio to work requires a physical layout. used the one from https://github.com/BildermanKawasaki/zmk-keyboard-totem/
+// Getting ZMk studio to work requires a physical layout. used the one from https://github.com/BildermanKawasaki/zmk-keyboard-totem/
 
 / {
     totem_layout: totem_layout {
