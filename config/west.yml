@@ -7,24 +7,29 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3
       import: app/west.yml
     
     # urob modules for zmk, stashing here for now
     - name: zmk-adaptive-key
       remote: urob
+      revision: v0.3
       path: modules/zmk/adaptive-key
     - name: zmk-auto-layer
       remote: urob
+      revision: v0.3
       path: modules/zmk/auto-layer
     - name: zmk-helpers
       remote: urob
+      revision: v0.3
       path: modules/zmk/helpers
     - name: zmk-leader-key
       remote: urob
+      revision: v0.3
       path: modules/zmk/leader-key
     - name: zmk-tri-state
       remote: urob
+      revision: v0.3
       path: modules/zmk/tri-state
   self:
     path: config
