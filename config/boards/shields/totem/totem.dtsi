@@ -5,7 +5,7 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "totem_layout.dtsi"  // required for ZMK Studio
+#include "totem_layouts.dtsi"  // required for ZMK Studio
 
 &totem_layout {
     transform = <&default_transform>;
