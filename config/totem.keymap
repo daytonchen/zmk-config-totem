@@ -120,7 +120,13 @@
 
         combo_power {
             bindings = <&kp CARET>;
-            key-positions = <6 16>;
+            key-positions = <5 15>;
+        };
+
+        num_period {
+            bindings = <&kp PERIOD>;
+            key-positions = <29 27 28>;
+            layers = <1>;
         };
     };
 
