@@ -381,7 +381,9 @@ path.combo {
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
-<text x="242" y="42" class="combo tap"><tspan style="font-size: 64%">&amp;smart_mou…</tspan></text>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">&amp;smart_mou…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">6</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -679,7 +681,9 @@ path.combo {
 </g>
 <g class="combo combopos-21">
 <rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
-<text x="242" y="42" class="combo tap"><tspan style="font-size: 64%">&amp;smart_mou…</tspan></text>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">&amp;smart_mou…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">6</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -852,8 +856,8 @@ path.combo {
 </g>
 <g transform="translate(596, 236)" class="key keypos-37">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<a href="#Mouse">
-<text x="0" y="0" class="key tap layer-activator">Mouse</text>
+<a href="#MOUSE">
+<text x="0" y="0" class="key tap layer-activator">MOUSE</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g class="combo combopos-0">
@@ -946,7 +950,9 @@ path.combo {
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
-<text x="242" y="42" class="combo tap"><tspan style="font-size: 64%">&amp;smart_mou…</tspan></text>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">&amp;smart_mou…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">6</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1201,7 +1207,9 @@ path.combo {
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
-<text x="242" y="42" class="combo tap"><tspan style="font-size: 64%">&amp;smart_mou…</tspan></text>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">&amp;smart_mou…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">6</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1453,7 +1461,9 @@ path.combo {
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
-<text x="242" y="42" class="combo tap"><tspan style="font-size: 64%">&amp;smart_mou…</tspan></text>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">&amp;smart_mou…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">6</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1708,12 +1718,14 @@ path.combo {
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
-<text x="242" y="42" class="combo tap"><tspan style="font-size: 64%">&amp;smart_mou…</tspan></text>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">&amp;smart_mou…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">6</tspan>
+</text>
 </g>
 </g>
 </g>
-<g transform="translate(30, 2193)" class="layer-Mouse">
-<text x="0" y="28" class="label" id="Mouse">Mouse:</text>
+<g transform="translate(30, 2193)" class="layer-MOUSE">
+<text x="0" y="28" class="label" id="MOUSE">MOUSE:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(78, 113) rotate(-10.0)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
@@ -1985,7 +1997,9 @@ path.combo {
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="228" y="29" width="28" height="26" class="combo"/>
-<text x="242" y="42" class="combo tap"><tspan style="font-size: 64%">&amp;smart_mou…</tspan></text>
+<text x="242" y="42" class="combo tap">
+<tspan x="242" dy="-0.6em" style="font-size: 64%">&amp;smart_mou…</tspan><tspan x="242" dy="1.2em" style="font-size: 64%">6</tspan>
+</text>
 </g>
 </g>
 </g>

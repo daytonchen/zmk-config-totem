@@ -116,7 +116,7 @@ layers:
   - ADJ
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: Mouse, h: toggle}
+  - {t: MOUSE, h: toggle}
   ADJ:
   - '&sys_reset'
   - BT CLR ALL
@@ -234,7 +234,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Mouse:
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -318,4 +318,4 @@ combos:
 - p: [28, 29]
   k: ']'
 - p: [2, 3]
-  k: '&smart_mouse'
+  k: '&smart_mouse 6'
