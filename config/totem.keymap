@@ -319,7 +319,7 @@
         /* Custom Behaviors*/
 
         //swapper, requires urob's tri-state module
-        swap: swapper {
+        swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             label = "SWAPPER";
             #binding-cells = <0>;
