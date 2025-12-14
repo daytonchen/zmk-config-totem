@@ -25,6 +25,7 @@
 #define ADJ  3
 #define TVP1 4
 #define TVP2 5
+#define MOUSE 6
 
 &mt {
     quick-tap-ms = <150>;
@@ -161,7 +162,7 @@
         //Requires urob's auto-layer
         combo_smart-mouse {
             key-positions = <2 3>;
-            bindings = <&smart_mouse>;
+            bindings = <&smart_mouse 6>;
         };
 
     };
@@ -500,6 +501,7 @@
         };
 
         Mouse {
+            label = "MOUSE"
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans          &kp PG_UP       &mmv MOVE_UP    &kp PAGE_DOWN    &trans
         &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
