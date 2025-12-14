@@ -28,11 +28,11 @@
     global-quick-tap;
     flavor = "balanced";
     tapping-term-ms = <280>;
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <150>;
     hold-trigger-on-release;
 };
 
-&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS SLASH>; };
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS SLASH KP_NUMBER_1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0>; };
 
 &mmv { time-to-max-speed-ms = <500>; };
 
@@ -52,9 +52,9 @@
             bindings = <&tog TVP1>;
         };
 
-        combo_del {
-            bindings = <&kp DEL>;
-            key-positions = <8 9>;
+        combo_bksp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 7>;
         };
 
         F2_combo {
@@ -64,7 +64,7 @@
 
         combo_apos {
             bindings = <&kp APOS>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             require-prior-idle-ms = <150>;
         };
 
@@ -90,12 +90,12 @@
 
         combo_underscore {
             bindings = <&kp UNDER>;
-            key-positions = <27 28>;
+            key-positions = <28 17>;
         };
 
         combo_dash {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <16 17>;
+            bindings = <&kp MINUS>;
+            key-positions = <16 27>;
         };
 
         combo_equals {
@@ -127,6 +127,26 @@
             bindings = <&kp PERIOD>;
             key-positions = <29 27 28>;
             layers = <1>;
+        };
+
+        lpara {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 17>;
+        };
+
+        rpara {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <17 18>;
+        };
+
+        lbracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <27 28>;
+        };
+
+        rbracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <28 29>;
         };
     };
 
@@ -265,6 +285,13 @@
 
             tapping-term-ms = <200>;
         };
+
+        tp_caps: tp_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TP_CAPS";
+            #binding-cells = <0>;
+            bindings = <&caps_word>, <&kp CAPS>;
+        };
     };
 
     keymap {
@@ -289,10 +316,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q       &kp W       &kp E        &kp R          &kp T      &kp Y    &kp U          &kp I        &kp O       &kp P
-            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
-&caps_word  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp DOUBLE_QUOTES
-                                    &kp DEL      &lt NAV SPACE  &kp TAB    &kp RET  &lt SYM SPACE  &kp BSPC
+          &kp Q       &kp W       &kp E        &kp R          &kp T      &kp Y    &kp U          &kp I        &kp O       &kp P
+          &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F    &kp G      &kp H    &mt RSHFT J    &mt RCTRL K  &mt RALT L  &mt RGUI SEMI
+&tp_caps  &kp Z       &kp X       &kp C        &kp V          &kp B      &kp N    &kp M          &kp COMMA    &kp DOT     &kp FSLH       &kp DOUBLE_QUOTES
+                                  &kp DEL      &lt NAV SPACE  &kp TAB    &kp RET  &lt SYM SPACE  &kp DELETE
             >;
         };
 
