@@ -160,11 +160,12 @@
         /*custom combos that require modules */
 
         //Requires urob's auto-layer
-        combo_smart-mouse {
+       /* combo_smart-mouse {
             key-positions = <2 3>;
             bindings = <&smart_mouse 6>;
         };
-
+        */
+ 
     };
 
 
@@ -329,12 +330,13 @@
         };
 
         //smart mouse auto-layer
-        smart_mouse: smart_mouse {
+       /* smart_mouse: smart_mouse {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
             continue-list = <PG_UP MOVE_UP PG_DN SCRL_LEFT MOVE_LEFT MOVE_DOWN MOVE_RIGHT SCRL_RIGHT LCLK MCLK RCLK SCRL_RIGHT SCRL_DOWN>;
             ignore-modifiers;
         };
+        */
     };
 
 
