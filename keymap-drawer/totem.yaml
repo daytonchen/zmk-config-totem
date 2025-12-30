@@ -21,7 +21,7 @@ layers:
   - {t: K, h: RCTRL}
   - {t: L, h: RALT}
   - {t: ;, h: RGUI}
-  - '&caps_word'
+  - '&tp_caps'
   - Z
   - X
   - C
@@ -38,12 +38,12 @@ layers:
   - TAB
   - RET
   - {t: SPACE, h: SYM}
-  - BSPC
+  - DELETE
   NAVI:
   - ESC
   - BT CLR
   - {t: UP ARROW, h: Ctl+HOME}
-  - '='
+  - '&swapper'
   - '&insert_brace'
   - '~'
   - KP 7
@@ -116,7 +116,7 @@ layers:
   - ADJ
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: Mouse, h: toggle}
+  - {t: MOUSE, h: toggle}
   ADJ:
   - '&sys_reset'
   - BT CLR ALL
@@ -234,7 +234,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Mouse:
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -268,7 +268,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: NAVI, h: toggle}
+  - {t: BASE, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&msc SCRL_UP'
@@ -278,11 +278,11 @@ combos:
   k: ESC
 - p: [11, 12, 13]
   k: {t: TVP 1, h: toggle}
-- p: [8, 9]
-  k: DEL
+- p: [8, 7]
+  k: BACKSPACE
 - p: [12, 2]
   k: F2
-- p: [7, 8]
+- p: [8, 9]
   k: ''''
 - p: [22, 23]
   k: Ctl+C
@@ -292,10 +292,10 @@ combos:
   k: '&'
 - p: [3, 13]
   k: F4
-- p: [27, 28]
+- p: [28, 17]
   k: _
-- p: [16, 17]
-  k: KP MINUS
+- p: [16, 27]
+  k: '-'
 - p: [13, 24]
   k: '='
 - p: [1, 11]
@@ -304,5 +304,18 @@ combos:
   k: '!'
 - p: [24, 22]
   k: Ctl+X
-- p: [6, 16]
+- p: [5, 15]
   k: ^
+- p: [29, 27, 28]
+  k: .
+  l: [NAVI]
+- p: [16, 17]
+  k: (
+- p: [17, 18]
+  k: )
+- p: [27, 28]
+  k: '['
+- p: [28, 29]
+  k: ']'
+- p: [2, 3]
+  k: '&smart_mouse 6'
