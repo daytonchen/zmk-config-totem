@@ -161,7 +161,7 @@
 
         combo_delete {
             bindings = <&kp DEL>;
-            key-positions = <8 7>;
+            key-positions = <7 6>;
             require-prior-idle-ms = <150>;
         };
 
