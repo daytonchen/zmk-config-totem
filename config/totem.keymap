@@ -157,6 +157,7 @@
         mouse {
             bindings = <&to 6>;
             key-positions = <2 3>;
+            require-prior-idle-ms = <250>;
         };
 
         combo_delete {
