@@ -40,7 +40,7 @@ layers:
   - {t: SPACE, h: SYM}
   - DELETE
   NAVI:
-  - ESC
+  - {t: ▽, type: trans}
   - BT CLR
   - {t: UP ARROW, h: Ctl+HOME}
   - '&swapper'
@@ -59,7 +59,7 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - KP MINUS
+  - ^
   - {t: BASE_GALLIUM, h: toggle}
   - {t: LCTRL, h: sticky}
   - PG UP
@@ -319,3 +319,5 @@ combos:
   k: ']'
 - p: [2, 3]
   k: {t: MOUSE, h: toggle}
+- p: [8, 7]
+  k: DEL
