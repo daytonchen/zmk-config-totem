@@ -319,5 +319,5 @@ combos:
   k: ']'
 - p: [2, 3]
   k: {t: MOUSE, h: toggle}
-- p: [8, 7]
+- p: [7, 6]
   k: DEL
