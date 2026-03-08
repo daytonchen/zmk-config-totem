@@ -10,6 +10,8 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 // modules
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 200   // 10
 
 #include <behaviors/num_word.dtsi> // Requires zmk-auto-layer module. Adds num word
 #include <behaviors.dtsi>
@@ -37,15 +39,19 @@
 
 &caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE MINUS SLASH KP_NUMBER_1 KP_N2 KP_N3 KP_N4 KP_N5 KP_N6 KP_N7 KP_N8 KP_N9 KP_N0>; };
 
-};
+
 
 &msc {
     trigger-period-ms = <8>;
-    time-to-max-speed-ms = <40>;
-    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <40>;  // 300
+    acceleration-exponent = <1>;  // 0
 };
 
-&mmv { time-to-max-speed-ms = <500>; };
+&mmv { 
+    time-to-max-speed-ms = <500>; // 300
+    trigger-period-ms = <8>;
+    acceleration-exponent = <1>;  // 1
+    };
 
 / {
     // start of combos
