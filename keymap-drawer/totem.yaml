@@ -49,7 +49,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - KP PLUS
+  - ^
   - {t: LSHFT, h: sticky}
   - {t: LEFT, h: HOME}
   - {t: DOWN, h: Ctl+END}
@@ -59,7 +59,7 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - ^
+  - KP PLUS
   - {t: BASE_GALLIUM, h: toggle}
   - {t: LCTRL, h: sticky}
   - PG UP
@@ -174,7 +174,7 @@ layers:
   - SPACE
   - ''
   - Gui+LEFT
-  - ''
+  - KP NUMLOCK
   - Gui+RIGHT
   - ''
   - J
