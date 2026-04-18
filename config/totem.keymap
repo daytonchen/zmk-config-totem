@@ -160,17 +160,19 @@
         lbracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <27 28>;
+            require-prior-idle-ms = <250>;
         };
 
         rbracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <28 29>;
+            require-prior-idle-ms = <250>;
         };
 
         mouse {
             bindings = <&to 6>;
             key-positions = <2 3>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <800>;
         };
 
         combo_delete {
