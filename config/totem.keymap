@@ -171,7 +171,7 @@
 
         mouse {
             bindings = <&to 6>;
-            key-positions = <2 3>;
+            key-positions = <2 3 1>;
             require-prior-idle-ms = <800>;
         };
 
@@ -402,10 +402,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PRCNT    &kp CARET     &kp STAR          &kp RA(U)      &kp LS(O)     &kp DQT
-        &kp RA(A)      &trans         &kp RA(S)      &trans         &trans       &kp C_MUTE    &kp C_PLAY_PAUSE  &kp LC(LS(G))  &excel_merge  &kp RA(O)
-&trans  &kp LA(LC(Z))  &kp LA(LC(X))  &kp LA(LC(C))  &kp LC(LA(V))  &trans       &kp C_VOL_DN  &kp C_VOL_UP      &kp C_PREV     &kp C_NEXT    &kp BSLH   &trans
-                                      &trans         &gif           &mo 3        &trans        &trans            &to 6
+        &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PRCNT    &kp CARET   &kp RC(RS(R))     &kp RA(U)        &kp LS(O)     &kp DQT
+        &kp RA(A)      &trans         &kp RA(S)      &trans         &trans       &kp C_MUTE  &kp C_PLAY_PAUSE  &kp LC(LS(G))    &excel_merge  &kp RA(O)
+&trans  &kp LA(LC(Z))  &kp LA(LC(X))  &kp LA(LC(C))  &kp LC(LA(V))  &trans       &kp C_PREV  &kp C_VOL_DN      &kp C_VOLUME_UP  &kp C_NEXT    &kp BSLH   &trans
+                                      &trans         &gif           &mo 3        &trans      &trans            &to 6
             >;
         };
 
@@ -452,7 +452,7 @@
             bindings = <
        &kp TAB    &kp I             &kp LC(LALT)  &kp O              &kp LC(F20)    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &none          &none
        &trans     &kp LG(LC(LEFT))  &kp LALT      &kp LC(LG(RIGHT))  &kp SPACE      &none         &kp LG(LEFT)  &kp KP_NUMLOCK  &kp LG(RIGHT)  &none
-&kp J  &kp LSHFT  &kp LG(LS(C))     &kp BSPC      &kp LC(LA(LG(V)))  &kp LC(F19)    &none         &none         &none           &none          &none  &none
+&kp J  &kp LSHFT  &kp LG(LS(C))     &kp BSPC      &kp LC(LA(LG(V)))  &kp LC(F19)    &none         &none         &none           &none          &none  &out OUT_TOG
                                     &trans        &kp LC(F14)        &kp LC(F13)    &none         &none         &none
             >;
         };
