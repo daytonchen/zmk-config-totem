@@ -85,7 +85,7 @@ layers:
   - $
   - '%'
   - ^
-  - '*'
+  - Ctl+Sft+R
   - AltGr+U
   - Sft+O
   - '"'
@@ -105,9 +105,9 @@ layers:
   - Alt+Ctl+C
   - Ctl+Alt+V
   - {t: ▽, type: trans}
-  - VOL DN
-  - VOL UP
   - PREV
+  - VOL DN
+  - VOLUME UP
   - NEXT
   - \
   - {t: ▽, type: trans}
@@ -188,7 +188,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - OUT TOG
   - {t: ▽, type: trans}
   - Ctl+F14
   - Ctl+F13
@@ -317,7 +317,7 @@ combos:
   k: '['
 - p: [28, 29]
   k: ']'
-- p: [2, 3]
+- p: [2, 3, 1]
   k: {t: MOUSE, h: toggle}
 - p: [7, 6]
   k: DEL
