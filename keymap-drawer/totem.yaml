@@ -55,7 +55,7 @@ layers:
   - {t: DOWN, h: Ctl+END}
   - {t: RIGHT, h: END}
   - '&insert_bracket'
-  - ''''
+  - {t: ▽, type: trans}
   - KP 4
   - KP 5
   - KP 6
@@ -66,7 +66,7 @@ layers:
   - Sft+V
   - PG DN
   - '&insert_para'
-  - .
+  - SPACE
   - KP 1
   - KP 2
   - KP 3
@@ -84,14 +84,14 @@ layers:
   - '#'
   - $
   - '%'
-  - ^
-  - Ctl+Sft+R
-  - AltGr+U
-  - Sft+O
-  - '"'
-  - AltGr+A
   - {t: ▽, type: trans}
-  - AltGr+S
+  - Ctl+Sft+R
+  - {t: ▽, type: trans}
+  - Sft+O
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - MUTE
@@ -109,8 +109,8 @@ layers:
   - VOL DN
   - VOLUME UP
   - NEXT
-  - \
   - {t: ▽, type: trans}
+  - '|'
   - {t: ▽, type: trans}
   - '&gif'
   - ADJ
@@ -321,3 +321,6 @@ combos:
   k: {t: MOUSE, h: toggle}
 - p: [7, 6]
   k: DEL
+- p: [29, 30]
+  k: \
+  l: [BASE]
