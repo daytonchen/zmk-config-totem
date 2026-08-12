@@ -409,7 +409,7 @@
 
             bindings = <
         &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PRCNT    &trans      &kp RC(RS(R))     &trans           &kp LS(O)     &trans
-        &trans         &trans         &trans         &trans         &trans       &kp C_MUTE  &kp C_PLAY_PAUSE  &kp LC(LS(G))    &excel_merge  &kp RA(O)
+        &trans         &trans         &kp RG(RS(S))  &trans         &trans       &kp C_MUTE  &kp C_PLAY_PAUSE  &kp LC(LS(G))    &excel_merge  &kp RA(O)
 &trans  &kp LA(LC(Z))  &kp LA(LC(X))  &kp LA(LC(C))  &kp LC(LA(V))  &trans       &kp C_PREV  &kp C_VOL_DN      &kp C_VOLUME_UP  &kp C_NEXT    &trans     &kp PIPE
                                       &trans         &gif           &mo 3        &trans      &trans            &to 6
             >;
