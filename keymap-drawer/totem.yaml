@@ -66,7 +66,7 @@ layers:
   - Sft+V
   - PG DN
   - '&insert_para'
-  - SPACE
+  - \
   - KP 1
   - KP 2
   - KP 3
@@ -94,7 +94,7 @@ layers:
   - Gui+Sft+S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - MUTE
+  - {t: ▽, type: trans}
   - PLAY PAUSE
   - Ctl+Sft+G
   - '&excel_merge'
@@ -105,11 +105,11 @@ layers:
   - Alt+Ctl+C
   - Ctl+Alt+V
   - {t: ▽, type: trans}
+  - MUTE
   - PREV
-  - VOL DN
+  - VOLUME DOWN
   - VOLUME UP
   - NEXT
-  - {t: ▽, type: trans}
   - '|'
   - {t: ▽, type: trans}
   - '&gif'
