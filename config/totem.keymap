@@ -385,7 +385,7 @@
 
             bindings = <
        &trans     &bt BT_CLR     &mt LC(HOME) UP_ARROW  &swapper       &insert_brace      &kp TILDE      &kp KP_N7  &kp KP_N8             &kp KP_N9  &kp CARET
-       &sk LSHFT  &mt HOME LEFT  &mt LC(END) DOWN       &mt END RIGHT  &insert_bracket    &trans         &kp KP_N4  &kp KP_N5             &kp KP_N6  &kp KP_PLUS
+       &sk LSHFT  &mt HOME LEFT  &mt LC(END) DOWN       &mt END RIGHT  &insert_bracket    &kp GRAVE      &kp KP_N4  &kp KP_N5             &kp KP_N6  &kp KP_PLUS
 &to 5  &sk LCTRL  &kp PG_UP      &kp LS(V)              &kp PG_DN      &insert_para       &kp BACKSLASH  &kp KP_N1  &kp KP_N2             &kp KP_N3  &kp KP_MULTIPLY  &kp KP_SLASH
                                  &trans                 &trans         &trans             &mo 3          &kp KP_N0  &mt PERIOD BACKSPACE
             >;
