@@ -55,7 +55,7 @@ layers:
   - {t: DOWN, h: Ctl+END}
   - {t: RIGHT, h: END}
   - '&insert_bracket'
-  - {t: ▽, type: trans}
+  - '`'
   - KP 4
   - KP 5
   - KP 6
